@@ -1,0 +1,63 @@
+
+body
+{
+
+	background-color: skyblue;
+}
+.header
+{
+	background-color: #0E71AA;
+	padding:10px 0;
+	color:white;
+}
+.header span
+{
+	font-family: Pacifico;
+
+}
+.titulo
+{
+	font-size: 25px;
+
+}
+.header i
+{
+	font-size: 20px;
+}
+
+.header button 
+{
+	background-color: #6392AD;
+	border:none;
+	padding: 8px 5px;
+
+}
+ .header input
+{
+	border:none;
+	background-color: #6392AD;
+	height: 25px;
+}
+#search
+{
+	margin-left: 15px;
+}
+
+
+.divCrear
+{
+	border: 1px solid red;
+	background-color: white;
+	color: black
+}
+.divCrear input
+{
+	border: 1px solid red;
+	background-color: white;
+	color: black
+}
+.divCrear button
+{
+	background-color: green;
+	color: black
+}
