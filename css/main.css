@@ -1,49 +1,59 @@
-
-body
-{
-
-	background-color: skyblue;
-}
-.header
+header
 {
 	background-color: #0E71AA;
 	padding:10px 0;
 	color:white;
 }
-.header span
+header span
 {
 	font-family: Pacifico;
-
+	font-size: 30px;
 }
-.titulo
-{
-	font-size: 25px;
-
-}
-.header i
+header i
 {
 	font-size: 20px;
 }
 
-.header button 
+header button 
 {
 	background-color: #6392AD;
 	border:none;
 	padding: 8px 5px;
 
 }
- .header input
+header input
 {
 	border:none;
 	background-color: #6392AD;
 	height: 25px;
 }
-#search
+.titulo .fa
 {
-	margin-left: 15px;
+	font-size: 30px;
+	color: #6392AD;
+
+}
+.titulo :hover
+{
+	color:#C8DFEC;
 }
 
+.tableros .btn:hover
+{
+	color: white;
+}
 
+/*PATE DEL TABLEROS*/
+.tableroPersonal 
+{
+	color: grey;
+	font-size: 20px;
+}
+.tableroPersonal span
+{
+	font-size: 15px;
+}
+/*ESTILOS PARA LA CREACION DE TABLEROS*/
 .divCrear
 {
 	border: 1px solid red;

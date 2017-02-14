@@ -13,24 +13,30 @@
 	
 </head>
 <body>
-	<div class="header">
+	<header>
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-4 tableros">
-					<button><i class="fa fa-trello" aria-hidden="true"></i>&nbsp&nbsp Tableros</button> 
-					<!--<input type="" name="" ><i class="fa fa-search" aria-hidden="true"></i>-->
+				<div class="col-xs-4 col-sm-4 col-md-4 tableros">
+					<button ><i class="fa fa-trello" aria-hidden="true"></i>&nbsp&nbsp Tableros</button> 
 				</div>
-				<div class="col-md-4 titulo text-center">
+				<div class="col-xs-4 col-sm-4 col-md-4 titulo text-center">
 					<i class="fa fa-trello" aria-hidden="true"><span>&nbspTrello</span> </i>
 				</div>
-				<div class="col-md-4 text-center aniadir">
-					<button onclick="crearTablero()"><i class="fa fa-plus" aria-hidden="true"></i></button>
-					<div class="col-md-8 divCrear" id="crearTablero">
-						
-					</div>
+				<div class="col-xs-4 col-sm-4 col-md-4 text-center aniadir">
+					<button onclick="crearTablero()" ><i class="fa fa-plus" aria-hidden="true"></i></button>
 				</div>
 			</div>
 		</div>
-	</div>
+	</header>
+<br>
+	<section class="tableroPersonal">
+		<div class="container">
+			<div class="row">
+
+				<i class="fa fa-user" aria-hidden="true"><span><strong> Tableros Personales</strong></span></i>
+			</div>
+		</div>		
+	</section>	
+
 </body>
 </html>
