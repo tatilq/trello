@@ -39,6 +39,7 @@ function crearTablero()
 function aniadirTablero()
 {
 	//console.log(inputTablero.value);
+	var isPaint=false;
 	sessionStorage.setItem('tablero',inputTablero.value);
 	crearTab.style.display = 'none';
 	for(var i=0;i<sessionStorage.length;i++){
@@ -46,17 +47,29 @@ function aniadirTablero()
         var nombre=sessionStorage.getItem(tablero);
         listaTablero.innerHTML += '<li class="list-unstyled elemento" id="elemento"><small class="text-left">'+nombre+'</small></li>';
     }
-    
-    var color='#'+Math.floor(Math.random()*16777215).toString(16);
+
+    var li=document.getElementsByClassName("elemento");
     var elemento=document.getElementById("elemento");
-    elemento.style.backgroundColor= color;
+    //var color='#'+Math.floor(Math.random()*16777215).toString(16);
+    //console.log(li.length);
+    var long=li.length;
+
+    for(var i=0;i<long;i++)
+    {
+    	li[i].style.backgroundColor= colores();
+    }
+
+    elemento.addEventListener('click',crearTarjeta);
     inputTablero.value="";
     inputTablero.focus();
 }
 function colores()
 {
 	var color='#'+Math.floor(Math.random()*16777215).toString(16);
-	console.log(color);
-	var colores=document.getElementById("colores");
-	colores.style.backgroundColor= color;
+	
+	return color;
+}
+function crearTarjeta()
+{
+	listaTablero.innerHTML="";
 }
