@@ -1,3 +1,6 @@
+*{
+	box-sizing: border-box;
+}
 header
 {
 	background-color: #0E71AA;
@@ -54,7 +57,7 @@ header input
 	font-size: 15px;
 }
 /*ESTILOS PARA LA CREACION DE TABLEROS*/
-.listaTableros
+.crearTab
 {
 	display: none;
 	background-color: white;
@@ -66,17 +69,37 @@ header input
 	left:30%;
 	padding: 10px;
 }
-.listaTableros input
+.crearTab input
 {
 	background-color: white;
 	width: 100%;
 	border-radius: 3px;
 	border: 1px solid grey;
 }
-.listaTableros button
+.crearTab button
 {
 	color: white;
 	border-radius: 7px;
 	background-color: #5EB449;
 	margin-top: 20px;
 }
+/*LIS DE LOS ELEMENTOS DE LOS TABLEROS*/
+
+.lista .elemento
+{
+	display: inline-block;
+}
+.elemento
+{
+	background-color: #0E71AA;
+	margin:20px;
+	box-sizing: border-box;
+	width: 300px;
+	height: 150px;
+}
+.elemento small
+{
+	color: white;
+	padding:0px 50px 50px 10px;
+}
+
