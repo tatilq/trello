@@ -54,20 +54,29 @@ header input
 	font-size: 15px;
 }
 /*ESTILOS PARA LA CREACION DE TABLEROS*/
-.divCrear
+.listaTableros
 {
-	border: 1px solid red;
+	display: none;
 	background-color: white;
-	color: black
+	color: black;
+	border-radius: 10px;
+	border:1px solid grey;
+	position:absolute;
+	top:75%;
+	left:30%;
+	padding: 10px;
 }
-.divCrear input
+.listaTableros input
 {
-	border: 1px solid red;
 	background-color: white;
-	color: black
+	width: 100%;
+	border-radius: 3px;
+	border: 1px solid grey;
 }
-.divCrear button
+.listaTableros button
 {
-	background-color: green;
-	color: black
+	color: white;
+	border-radius: 7px;
+	background-color: #5EB449;
+	margin-top: 20px;
 }

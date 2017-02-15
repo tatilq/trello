@@ -17,13 +17,17 @@
 		<div class="container-fluid">
 			<div class="row">
 				<div class="col-xs-4 col-sm-4 col-md-4 tableros">
-					<button ><i class="fa fa-trello" aria-hidden="true"></i>&nbsp&nbsp Tableros</button> 
+					<button ><i class="fa fa-trello" aria-hidden="true"></i>
+					Tableros</button> 
 				</div>
 				<div class="col-xs-4 col-sm-4 col-md-4 titulo text-center">
 					<i class="fa fa-trello" aria-hidden="true"><span>&nbspTrello</span> </i>
 				</div>
 				<div class="col-xs-4 col-sm-4 col-md-4 text-center aniadir">
-					<button onclick="crearTablero()" ><i class="fa fa-plus" aria-hidden="true"></i></button>
+					<button onclick="crearTablero()" ><i class="fa fa-plus" aria-hidden="true" class="btn-default"></i></button>
+					<br>
+					<div class="listaTableros" id="listaTableros"></div>
+					<div class="divAgregar" id="divAgregar"></div>
 				</div>
 			</div>
 		</div>
@@ -31,12 +35,14 @@
 <br>
 	<section class="tableroPersonal">
 		<div class="container">
-			<div class="row">
-
+			<div class="row mitablero " id="mitablero">
 				<i class="fa fa-user" aria-hidden="true"><span><strong> Tableros Personales</strong></span></i>
+				<ul class="listaTablero"  id="tablero">
+					<!--Aqui se enlistan los tableros-->
+				</ul>
 			</div>
 		</div>		
 	</section>	
-
+<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

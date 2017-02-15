@@ -1,10 +1,39 @@
+var isCreate = false;//
+var display = false;
 function crearTablero()
 {
-var crearTablero=document.getElementById('crearTablero');
-crearTablero.innerHTML='<div class="col-md-8 divCrear"><h4>Crear Tablero</h4>'+
-							'<hr><p><strong>Ttitulo</strong></p>'+
-							'<input type="" name="" placeholder="Como Cosas de casa, por ejemplo ...">'+
-							'<br><br>'+
-							'<button>Crear</button>'+
-						'</div>';
+
+	var listaTableros= document.getElementById('listaTableros');
+	if(!isCreate){//si aun no se ha creado lo creo
+		
+		listaTableros.setAttribute("style", "block");
+		
+		var divCrear='<p class="text-center"><strong>Crear Tablero<strong></p><hr>'+
+					'<label>Titulo</label><br>'+
+					'<input type="text" id="inputTablero" name="" placeholder="  <<nombre del tablero>>"><br>'+
+					'<button id="btnCrearTab">Crear Tablero</button>';
+		listaTableros.innerHTML= divCrear;
+		inputTablero.focus();	
+		btnCrearTab.addEventListener('click',aniadirTablero);
+		isCreate=true;
+		
+	}
+	else
+	{
+		if(!display)
+		{
+			listaTableros.style.display= "block";
+			display=true;
+		}
+		else
+		{
+			listaTableros.style.display= "none";
+			display=false;
+		}
+	}
+	
+}
+function aniadirTablero()
+{
+
 }
