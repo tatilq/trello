@@ -6,11 +6,9 @@ header
 	background-color: #0E71AA;
 	padding:10px 0;
 	color:white;
-}
-header span
+}.titulo span
 {
 	font-family: Pacifico;
-	font-size: 30px;
 }
 header i
 {
@@ -49,12 +47,14 @@ header input
 /*PATE DEL TABLEROS*/
 .tableroPersonal 
 {
-	color: grey;
+	color: white;
 	font-size: 20px;
+	background-color: #80C1FE;
+
 }
 .tableroPersonal span
 {
-	font-size: 15px;
+	font-size: 18px;
 }
 /*ESTILOS PARA LA CREACION DE TABLEROS*/
 .crearTab
@@ -63,25 +63,32 @@ header input
 	background-color: white;
 	color: black;
 	border-radius: 10px;
-	border:1px solid grey;
+	box-shadow: 5px 5px 5px #888888;
 	position:absolute;
 	top:75%;
 	left:30%;
 	padding: 10px;
+	font-size: 15px;
 }
 .crearTab input
 {
 	background-color: white;
 	width: 100%;
+	padding-left: 3px;
 	border-radius: 3px;
-	border: 1px solid grey;
 }
 .crearTab button
 {
 	color: white;
-	border-radius: 7px;
-	background-color: #5EB449;
+	padding: 12px;
+	border-radius: 5px;
+	background-color:#73D233;
 	margin-top: 20px;
+	font-size: bold;
+}
+.crearTab button:hover
+{
+	background-color: #5FAD2B;
 }
 /*LIS DE LOS ELEMENTOS DE LOS TABLEROS*/
 
@@ -102,4 +109,39 @@ header input
 	color: white;
 	padding:0px 50px 50px 10px;
 }
-
+/******LISTAS DE LAS TAREAS****/
+.listas
+{
+	color: black;
+	font-size: 15px;
+	border-radius: 3px;
+	display: inline-block;
+}
+.listas input
+{
+	width: 100%;
+	border-radius: 3px;
+	box-shadow: none;
+	background-color: #D7D9DB;
+}
+.listas li
+{
+	margin: 20px;
+	width: 300px;
+	padding: 10px;
+	display: inline-block;
+	background-color: #EAE7E7;
+}
+.listas button
+{
+	border:none;
+	background-color: #73D233;
+	border-radius: 3px;
+	color: white;
+	padding: 8px;
+}
+.listas button:hover
+{
+	background-color: #5FAD2B;
+}
+/***listaTarjetas****/
